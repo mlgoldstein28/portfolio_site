@@ -26,10 +26,10 @@ ul > li {
 .tabs {
     color: white;
     font-size: 18px;
-    background-image: linear-gradient(rgb(33, 53, 33), rgb(33, 53, 33) );
+    background-image: linear-gradient(white, white );
     background-size: 0% .1em;
     background-position-y: 90%;
-    background-position-x: 0%;
+    background-position-x: 95%;
     background-repeat: no-repeat;
     transition: background-size .2s ease-in-out;
 }
@@ -37,5 +37,6 @@ ul > li {
 .tabs:hover, .tabs:focus, .tabs:active {
     color: white;
     cursor: pointer;
-    background-size: 100% .1em
+    background-size: 100% .1em;
+    background-position-x: 0%;
 }

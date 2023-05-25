@@ -5,7 +5,7 @@ export default function Navbar() {
         <div className="Navbar">
             <nav className="">
                 <a className="" href="https://github.com/mlgoldstein28">
-                    <img src={gitHubLogo} className={styles.logo}/>
+                    <img src={gitHubLogo} className={styles.logo} alt="gitHubAccount" />
                 </a>
                 <div className="navbar-nav">
                   <ul className="d-flex">
