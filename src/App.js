@@ -1,12 +1,25 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import styles from './App.module.scss';
 import bgImage from './media/IMG_0236.JPG';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
+import AppChip from './src-chip/App';
 
 function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/chip" element={<AppChip />}></Route>
+      </Routes>
+    </Router>
+  )
+}
+
+function Home() {
   return (
     <div className="App">
       <div className={styles.myContainer}>
