@@ -6,14 +6,12 @@ import styles from './App.module.scss';
 import bgImage from './media/IMG_0236.JPG';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
-import AppChip from './src-chip/App';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/chip" element={<AppChip />}></Route>
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   )
