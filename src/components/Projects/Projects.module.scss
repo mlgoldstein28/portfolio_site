@@ -1,23 +1,38 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#426ac7da, rgb(255, 255, 255));
+}
 
 .img {
-    width: 400px;
+    width: 360px;
     height: 250px;
     object-fit: fill;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .projectContainer {
-    width: 450px;
-    height: 400px;
+    width: 380px;
+    height: 340px;
     border-radius: 8%;
-}
-
-.projectContainer:hover {
-    .description {
-        display: block;
-    }
+    background-color: rgba(245, 245, 245, 0);
+    color: white;
 }
 
 .description {
+    color: white;
     display: none;
+}
+
+.projectContainer:hover {
+    transition: ease-in-out;
+    margin: auto;
+    .description {
+        display: block;
+    }
+
+    .img {
+        transform: scale(1.07);
+    }
+
 }
