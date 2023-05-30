@@ -2,6 +2,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './App.module.scss';
 import bgImage from './media/IMG_0236.JPG';
 import Navbar from './components/Navbar/Navbar';
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   )
@@ -21,17 +23,16 @@ function Home() {
   return (
     <div className="App">
       <div className={styles.myContainer}>
-        <Navbar />
+      <Navbar />
         <div className={styles.myTextContainer}>
           <h1 className={styles.myName}>Michael Goldstein</h1>
           <p className={styles.myIntro}><span className="fw-bold">Frontend Developer</span><br/>Specializing in <span className="text-decoration-underline">ReactJS</span> and determined<br/>to deliver seamless products.</p>
-          <button className="btn btn-outline-light fs-3 mt-3">My Projects</button>
+          <Link to="/projects"><button className="btn btn-outline-light fs-3 mt-3">My Projects</button></Link>
       </div> 
       </div>
       <div className={styles.imgContainer}>
           <img src={bgImage} className={styles.img} alt="backgroundImage" />
       </div>
-      <Projects />
     </div>
   );
 }
