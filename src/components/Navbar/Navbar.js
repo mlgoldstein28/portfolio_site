@@ -1,5 +1,7 @@
 import gitHubLogo from '../../media/github-mark.png';
 import styles from './Navbar.module.scss'
+import { NavLink } from 'react-router-dom';
+
 export default function Navbar() {
     return (
         <div className="Navbar">
@@ -9,9 +11,9 @@ export default function Navbar() {
                 </a>
                 <div className="navbar-nav">
                   <ul className="d-flex">
-                    <li className={`nav-item nav-link ${styles.tabs}`} href="/">Projects</li>
-                    <li className={`nav-item nav-link ${styles.tabs}`} href="/">About Me</li>
-                    <li className={`nav-item nav-link ${styles.tabs}`} href="/">Contact</li>
+                    <NavLink to="/projects" className={`nav-item nav-link ${styles.tabs}`}>Projects</NavLink>
+                    <NavLink to="/about" className={`nav-item nav-link ${styles.tabs}`}>About Me</NavLink>
+                    <NavLink to="/contact" className={`nav-item nav-link ${styles.tabs}`}>Contact</NavLink>
                   </ul>
                 </div>
             </nav>
