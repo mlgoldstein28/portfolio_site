@@ -26,8 +26,8 @@ ul > li {
 .tabs {
     color: white;
     font-size: 18px;
-    background-image: linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235) );
-    background-size: 0% .1em;
+    //background-image: linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235) );
+    //background-size: 0% .1em;
     background-position-y: 90%;
     background-position-x: 95%;
     background-repeat: no-repeat;
@@ -35,9 +35,13 @@ ul > li {
     margin-left: 25px;
 }
 
-.tabs:hover, .tabs:focus, .tabs:active {
+.tabs:hover, .tabs:focus {
     color: rgb(235, 235, 235);
     cursor: pointer;
     background-size: 100% .1em;
     background-position-x: 0%;
+}
+
+.tabs:active {
+    background-color: linear-gradient(black, black);
 }

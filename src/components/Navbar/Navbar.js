@@ -11,6 +11,7 @@ export default function Navbar() {
                 </a>
                 <div className="navbar-nav">
                   <ul className="d-flex">
+                    <NavLink to="/" className={`nav-link ${styles.tabs} `}>Home</NavLink>
                     <NavLink to="/projects" className={`nav-item nav-link ${styles.tabs}`}>Projects</NavLink>
                     <NavLink to="/about" className={`nav-item nav-link ${styles.tabs}`}>About Me</NavLink>
                     <NavLink to="/contact" className={`nav-item nav-link ${styles.tabs}`}>Contact</NavLink>
