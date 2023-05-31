@@ -14,7 +14,11 @@
 }
 
 .description {
-    color: white;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
     display: none;
 }
 
@@ -22,11 +26,11 @@
     transition: ease-in-out;
     margin: auto;
     .description {
-        display: block;
+        display: flex;
     }
 
     .img {
-        transform: scale(1.07);
+        transform: scale(1.05);
     }
 
 }
