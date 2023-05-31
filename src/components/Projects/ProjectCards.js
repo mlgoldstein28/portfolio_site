@@ -12,7 +12,7 @@ const ProjectCards = () => {
     let { id, image, title, tools } = x;
     console.log(tools)
     return (
-        <div key={id} className="col-lg-3 col-12 mt-4 m-auto">
+        <div key={id} className="col-lg-3 col-12 mt-4 m-auto mb-4">
             <div className={`${styles.projectContainer} m-auto text-black`}>
                 <h2 className="mt-3 mb-3 text-center fw-bold">{title}</h2>
                 <hr className="w-50 m-auto mb-3"/>
