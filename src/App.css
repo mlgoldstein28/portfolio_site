@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/ltccaslon');
 
 * {
-  font-family: 'LTCCaslon', sans-serif;;
+  font-family: 'LTCCaslon', sans-serif;
+  max-width: 100%;
 }

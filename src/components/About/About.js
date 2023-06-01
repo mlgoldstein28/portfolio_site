@@ -1,32 +1,46 @@
 import styles from './About.module.scss';
-import Navbar from '../../components/Navbar/Navbar'
+import gitHubLogo from '../../media/github-mark.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+
+import Navbar from '../../components/Navbar/Navbar'
 
 export default function About() {
     return (
-        <div className={`${styles.container} col-12`}>
-            <Navbar />
-            <h1 className="fs-1 fw-bold text-center">About Me</h1>
-            <hr  className='w-50 m-auto'/>
-            <div className="row col-12 m-auto mt-4">
-            <div className={`row col-lg-3 col-12 ${styles.textContainer} shadow-lg rounded m-auto mt-5`}>
-                <p className="fw-bold m-auto mt-3 pt-3 w-75 text-center">
-	            <span className={styles.tab}></span>My career began in Public Relations with an opportunity to work as a Junior Publicist with a boutique PR firm in Manhattan. 
-                After learning the industry, I soon became a Publicist and began managing my own accounts. 
-                One year later, I was offered a position of Marketing Manager at a Promotional Products company based in Norwood, New Jersey. 
-                This position was paramount in my growth, but I still wished to improve my skills, as I felt I was not utilizing my full potential. 
-                With this notion, I began learning about Computer Science and different elements of programming.
-                I quickly realized my future in the industry. 
-                <br /> <br />
-                Since then, I have become adept at Frontend Development by the hands of JavaScript and it's libraries and frameworks. 
-                And although I believe myself to be a very promising developer, my desire to learn has only increased.
-	            
-                </p>
+        <div id="contact" className={`${styles.container}`}>
+            <div className="w-100 p-5">
+                <h1 className="text-center" style={{fontSize: "80px"}}>Contact Me</h1>
+                <hr className="w-50 m-auto"/>
             </div>
-            <div className="col-lg-3 col-12 w-25 m-0">
-                <p className="fs-2 text-center m-0 me-5 p-0 fw-bold">Stack</p>
+            <div className="text-center fw-bold">
+                <h2 className="mb-3">Michael Goldstein</h2>
+                <p className="fw-bold text-primary"><FontAwesomeIcon icon={faEnvelope} /> MLGoldstein28@gmail<span className="m-5"></span><a href="tel:2018033947"><FontAwesomeIcon icon={faPhone} className="me-1"/>(201) 803-3947</a></p>     
+            </div>
+            <form className="w-50 border border-light m-auto">
+                <div className="w-100 mb-3 d-flex flex-row justify-content-center">
+                    <div className="d-flex flex-column m-3">
+                    <label className="fw-bold">Your Name</label>
+                    <input type="text" className={styles.input}></input>
+                    </div>
+                    <div className="d-flex flex-column m-3">
+                    <label className="fw-bold">Your Email</label>
+                    <input className={styles.input} type="email"></input>
+                    </div>
+                </div>
+                <div className="w-75 vh-25 d-flex flex-column justify-content-center m-auto">
+                    <label className="fw-bold">Your Message</label>
+                    <textarea className={styles.input} style={{height: "120px", marginTop: "15px"}}></textarea>
+                    </div>
+                <div className="text-center mt-3 mb-3">
+                    <button type="submit" className="btn btn-success text-center m-auto">Submit<FontAwesomeIcon icon={faArrowCircleRight} className="ms-3"/></button>
+                </div>
+            </form>
+            <footer>
+            </footer>
+            <div className="w-25">
+                <p className="fs-2 text-center m-auto fw-bold">Stack</p>
                 <ul className="list-group">
                     <li className='list-group-item m-0 text-center'>JavaScript</li>
                     <li className='list-group-item m-0 text-center'>ReactJS</li>
@@ -38,11 +52,13 @@ export default function About() {
                     <li className='list-group-item m-0 text-center'>Knowledge of API's</li>
                     <li className='list-group-item m-0 text-center'>Knowledge of Git & Github</li>
                 </ul>
+                <div className="text-center">
+                    <a href="https://github.com/mlgoldstein28"><img src={gitHubLogo} alt="My-GitHub"  className={styles.gitHub} /></a>    
+                </div>
             </div>
             <div className="col-lg-9 col-12 text-center">
                 <button type="button" className="btn btn-outline-success mt-5 me-5 shadow fw-bold"><span className="me-1"><FontAwesomeIcon icon={faEnvelope} /></span>MLGoldstein28@gmail.com</button>
-                <button type="button" className="btn btn-outline-success mt-5 shadow fw-bold"><span className="me-1"><FontAwesomeIcon icon={faPhone} /></span>(201) 803-3947</button>
-            </div>
+                <button type="button" className="btn btn-outline-success mt-5 shadow fw-bold"><a href="tel:2018033947"><span className="me-1"><FontAwesomeIcon icon={faPhone} /></span>(201) 803-3947</a></button>
             </div>
         </div>
     )
