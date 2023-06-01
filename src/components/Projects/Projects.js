@@ -1,17 +1,63 @@
+import { useState } from 'react';
+import recipesThumb from '../../media/recipesThumb.png';
+import chipThumb from '../../media/chipThumb.png';
 import styles from './Projects.module.scss';
 import Navbar from '../Navbar/Navbar';
 import ProjectCards from './ProjectCards';
 
 const Projects = () => {
-    
+    let projects =  [
+        {"id": "1", "title": "Recipes", "image": recipesThumb, "subHead": "ReactJs", "tools": ["API", "Bootstrap", "SAAS", "GitHub"], "category": ["API", "JavaScript", "All"]},
+        {"id": "2", "title": "Chipotle Clone","image": chipThumb, "subHead": "ReactJs", "tools": ["Bootstrap", "SAAS", "GitHub"], "category": ["Design", "Animation", "All"]}
+    ]
+
+    const [projectDisplay, setProjectDisplay] = useState('All');
+    const [activeState, setActiveState] = useState('false')
+
+    const handleClick = (e) => {
+                setProjectDisplay(e.target.value)
+                console.log(projectDisplay)
+            }
+
     return (
-        <div>
+        <div id="projects" className="">
+            <style jsx>
+                {`
+                .x:checked + label{
+                    background-color: white;
+                    color: black
+                }
+                input[type="radio"] {display: none}
+                `}
+            </style>
             <div className={styles.container}>
-            <Navbar />
-                <h1 className="m-auto text-center text-light fw-bold mb-2" style={{fontSize: "80px"}}>Portfolio</h1>
-                <hr className="w-50 m-auto"/>
+                <div className="w-100 text-light p-1">
+                    <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "50px"}}>My Recent Work</h1>
+                    <hr className="w-25 m-3"/>
+                    <br/>
+                </div>
+                <div className="w-100 m-auto text-center">
+                    <button onClick={handleClick} value="Design" className="btn btn-outline-light m-3 text-center">Design</button>
+                    <button onClick={handleClick} value="API" className="btn btn-outline-light m-3 text-center">API</button>
+                    <button onClick={handleClick} value="Animation" className="btn btn-outline-light m-3 text-center">Animation</button>
+                    <button onClick={handleClick} value="JavaScript" className="btn btn-outline-light m-3 text-center">JavaScript</button>
+                    <div className="form-check">
+                        <input onClick={handleClick} className="form-check-input x" type="radio" value="Design" id="Design"></input>
+                        <label className="btn btn-outline-light" for="Design" value="Design">Design</label>
+                        <input onClick={handleClick} className="form-check-input x" type="radio" value="API" id="API"></input>
+                        <label className="btn btn-outline-light" for="API" value="API">API</label>
+                        <input onClick={handleClick} className="form-check-input x" type="radio" value="Animation" id="Animation"></input>
+                        <label className="btn btn-outline-light" for="Animation" value="Animation">Animation</label>
+                        <input onClick={handleClick} className="form-check-input x" type="radio" value="JavaScript" id="JavaScript"></input>
+                        <label className="btn btn-outline-light" for="JavaScript" value="JavaScript">JavaScript</label>
+                        <input onClick={handleClick} className="form-check-input x" type="radio" value="All" id="All"></input>
+                        <label className="btn btn-outline-light" for="All" value="All">All</label>
+                    </div>
+                </div>
                 <div className="row">
-                    <ProjectCards />
+                    <ProjectCards projects={projects}
+                                  setProjectDisplay={setProjectDisplay}
+                                  projectDisplay={projectDisplay}/>
                 </div>
             </div>
         </div>

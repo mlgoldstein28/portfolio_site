@@ -3,20 +3,17 @@ import recipesThumb from '../../media/recipesThumb.png';
 import styles from './ProjectCards.module.scss';
 import { Link } from 'react-router-dom';
 
-const ProjectCards = () => {
-    let projects =  [
-        {"id": "1", "title": "Recipes", "image": recipesThumb, "subHead": "ReactJs", "tools": ["API", "Bootstrap", "SAAS", "GitHub"]},
-        {"id": "2", "title": "Chipotle Clone","image": chipThumb, "subHead": "ReactJs", "tools": ["Bootstrap", "SAAS", "GitHub"]},
-    ]
+const ProjectCards = ({projectDisplay, projects}) => {
+
     let display = projects.map((x) => {
-    let { id, image, title, tools } = x;
-    console.log(tools)
+        let { id, image, title, tools, category } = x;
+
     return (
-        <div key={id} className="col-lg-3 col-12 mt-4 m-auto mb-4">
-            <div className={`${styles.projectContainer} m-auto text-black`}>
+        <div key={id} className={`col-lg-6 col-12 mt-4 m-auto mb-4 ${category.every((cat) => cat !== projectDisplay) ? `d-none` : null}`}>
+            <div className={`${styles.projectContainer} m-auto text-light`}>
                 <h2 className="mt-3 mb-3 text-center fw-bold">{title}</h2>
                 <hr className="w-50 m-auto mb-3"/>
-                <Link to="/chip"><img className={`${styles.img} shadow-lg`} src={image} alt="Chipotle-Clone" /></Link>
+                <Link to="/chip"><img className={`${styles.img} shadow-lg shadow-white`} src={image} alt="Chipotle-Clone" /></Link>
                 <div className={`${styles.description}`}>
                 {
                     (() => {
