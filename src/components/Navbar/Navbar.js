@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="Navbar">
             <nav className="">
                 <div className="d-flex">
-                    <h1 className="m-4 text-white fw-bold w-25">Michael Goldstein</h1>
+                    <h1 className="m-4 text-white fw-bold">Michael Goldstein</h1>
                     <ul className={`nav navbar-nav ms-auto mt-4 ${styles.stack}`}>
                         <button className={`btn btn-outline-light fs-3 ${styles.stack}`}>My Stack</button>
                         <ul className={`list-group ${styles.hiddenDrop}`}>
