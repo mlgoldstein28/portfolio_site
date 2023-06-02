@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './About.module.scss';
 import gitHubLogo from '../../media/github-mark.png';
+import linkedInLogo from '../../media/LI-logo.png';
 import resume from  '../../media/Resume_FD.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -38,12 +39,12 @@ export default function About() {
             <form className="w-50 border border-light m-auto">
                 <div className="w-100 mb-3 d-flex flex-row justify-content-center">
                     <div className="d-flex flex-column m-3">
-                    <label className="fw-bold">Your Name</label>
-                    <input onChange={handleName} type="text" className={styles.input}></input>
+                        <label className="fw-bold">Your Name</label>
+                        <input onChange={handleName} type="text" className={styles.input}></input>
                     </div>
                     <div className="d-flex flex-column m-3">
-                    <label className="fw-bold">Your Email</label>
-                    <input onChange={handleEmail} className={styles.input} type="email"></input>
+                        <label className="fw-bold">Your Email</label>
+                        <input onChange={handleEmail} className={styles.input} type="email"></input>
                     </div>
                 </div>
                 <div className="w-75 vh-25 d-flex flex-column justify-content-center m-auto">
@@ -56,6 +57,7 @@ export default function About() {
             </form>
                 <div className="text-center">
                     <a href="https://github.com/mlgoldstein28"><img src={gitHubLogo} alt="My-GitHub"  className={styles.gitHub} /></a>    
+                    <a href="https://www.linkedin.com/in/michael-goldstein-604033127/"><img src={linkedInLogo} alt="My-LinkedIn" className={styles.linkedIn} /></a>
                 </div>
         </div>
     )

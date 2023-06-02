@@ -33,10 +33,10 @@ const Projects = () => {
             <div className={styles.container}>
                 <div className="w-100 text-light p-1">
                     <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "50px"}}>My Recent Work</h1>
-                    <hr className="w-25 m-3"/>
+                    <hr className="m-3" style={{width: "340px"}}/>
                     <br/>
                 </div>
-                <div className="w-100 m-auto text-center d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                     <div className="form-check">
                         <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="ReactJS" id="ReactJS"></input>
                         <label  className="btn btn-outline-light" for="ReactJS" value="ReactJS">ReactJS</label>
@@ -58,7 +58,7 @@ const Projects = () => {
                         <label  className="btn btn-outline-light" for="All" value="All">All</label>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row m-auto ms-3">
                     <ProjectCards projects={projects}
                                   setProjectDisplay={setProjectDisplay}
                                   projectDisplay={projectDisplay}/>
