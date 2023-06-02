@@ -14,21 +14,6 @@ const ProjectCards = ({projectDisplay, projects}) => {
                 <h2 className="mt-3 mb-3 text-center fw-bold">{title}</h2>
                 <hr className="w-50 m-auto mb-3"/>
                 <Link to="/chip"><img className={`${styles.img} shadow-lg shadow-white`} src={image} alt="Chipotle-Clone" /></Link>
-                <div className={`${styles.description}`}>
-                {
-                    (() => {
-                        let usedSkills;
-                        usedSkills = tools.map((tool, index) => {
-                            if (tool) {
-                                return (
-                                        <div key={index} className="fw-bold m-3 text-center">{tool}</div>
-                                )
-                            }
-                        })
-                        return (<>{usedSkills}</>)
-                    })
-                ()}
-                </div>
             </div>
         </div>
     )

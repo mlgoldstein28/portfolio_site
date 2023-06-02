@@ -7,8 +7,8 @@ import ProjectCards from './ProjectCards';
 
 const Projects = () => {
     let projects =  [
-        {"id": "1", "title": "Recipes", "image": recipesThumb, "subHead": "ReactJs", "tools": ["API", "Bootstrap", "SAAS", "GitHub"], "category": ["API", "JavaScript", "All"]},
-        {"id": "2", "title": "Chipotle Clone","image": chipThumb, "subHead": "ReactJs", "tools": ["Bootstrap", "SAAS", "GitHub"], "category": ["Design", "Animation", "All"]}
+        {"id": "1", "title": "Recipes", "image": recipesThumb, "subHead": "ReactJs", "category": ["API", "ReactJS", "JavaScript", "All"]},
+        {"id": "2", "title": "Chipotle Clone","image": chipThumb, "subHead": "ReactJs", "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"]}
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
@@ -38,20 +38,20 @@ const Projects = () => {
                 </div>
                 <div className="w-100 m-auto text-center d-flex justify-content-center">
                     <div className="form-check">
-                        <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="Design" id="Design"></input>
-                        <label  className="btn btn-outline-light" for="Design" value="Design">Design</label>
+                        <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="ReactJS" id="ReactJS"></input>
+                        <label  className="btn btn-outline-light" for="ReactJS" value="ReactJS">ReactJS</label>
+                    </div>
+                    <div className='form-check'>
+                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="JavaScript" id="JavaScript"></input>
+                        <label  className="btn btn-outline-light" for="JavaScript" value="JavaScript">JavaScript</label>
                     </div>
                     <div className="form-check">
                         <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="API" id="API"></input>
                         <label  className="btn btn-outline-light" for="API" value="API">API</label>
                     </div>
                     <div className="form-check">
-                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="Animation" id="Animation"></input>
-                        <label  className="btn btn-outline-light" for="Animation" value="Animation">Animation</label>
-                    </div>
-                    <div className='form-check'>
-                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="JavaScript" id="JavaScript"></input>
-                        <label  className="btn btn-outline-light" for="JavaScript" value="JavaScript">JavaScript</label>
+                        <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="Design" id="Design"></input>
+                        <label  className="btn btn-outline-light" for="Design" value="Design">Design</label>
                     </div>
                     <div className="form-check">
                         <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="All" id="All"></input>
