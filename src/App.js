@@ -1,27 +1,14 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import styles from './App.module.scss';
 import bgImage from './media/IMG_0236.JPG';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
-  )
-}
 
-function Home() {
+export default function App() {
   return (
     <div className="App">
       <div className={styles.myContainer}>
@@ -41,5 +28,3 @@ function Home() {
     </div>
   );
 }
-
-export default App;

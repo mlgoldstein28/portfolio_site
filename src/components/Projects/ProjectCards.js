@@ -1,5 +1,4 @@
 import styles from './ProjectCards.module.scss';
-import { Link } from 'react-router-dom';
 
 const ProjectCards = ({projectDisplay, projects}) => {
 
@@ -11,7 +10,7 @@ const ProjectCards = ({projectDisplay, projects}) => {
             <div className={`${styles.projectContainer} m-auto text-light`}>
                 <h2 className="mt-3 mb-3 text-center fw-bold">{title}</h2>
                 <hr className="w-50 m-auto mb-3"/>
-                <Link to="/chip"><img className={`${styles.img} shadow-lg shadow-white`} src={image} alt="Chipotle-Clone" /></Link>
+                <img className={`${styles.img} shadow-lg shadow-white`} src={image} alt="Chipotle-Clone" />
             </div>
         </div>
     )

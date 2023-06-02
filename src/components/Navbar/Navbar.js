@@ -3,10 +3,6 @@ import styles from './Navbar.module.scss'
 
 export default function Navbar() {
 
-    const handleClick = () =>{
-
-    }
-
     return (
         <div className="Navbar">
             <nav className="">
