@@ -1,12 +1,10 @@
-import chipThumb from '../../media/chipThumb.png';
-import recipesThumb from '../../media/recipesThumb.png';
 import styles from './ProjectCards.module.scss';
 import { Link } from 'react-router-dom';
 
 const ProjectCards = ({projectDisplay, projects}) => {
 
     let display = projects.map((x) => {
-        let { id, image, title, tools, category } = x;
+        let { id, image, title, category } = x;
 
     return (
         <div key={id} className={`col-lg-6 col-12 mt-4 m-auto mb-4 ${category.every((cat) => cat !== projectDisplay) ? `d-none` : null}`}>

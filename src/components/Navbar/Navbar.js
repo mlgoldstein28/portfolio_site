@@ -1,6 +1,5 @@
-import gitHubLogo from '../../media/github-mark.png';
 import styles from './Navbar.module.scss'
-import { NavLink } from 'react-router-dom';
+
 
 export default function Navbar() {
 

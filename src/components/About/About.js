@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf'
 import styles from './About.module.scss';
 import gitHubLogo from '../../media/github-mark.png';
-import  '../../media/Resume_FD.pdf';
+import resume from  '../../media/Resume_FD.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -33,7 +32,7 @@ export default function About() {
             <div className="text-center fw-bold">
                 <h2 className="mb-3">Michael Goldstein</h2>
                 <p className="fw-bold text-primary"><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:mlgoldstein28@gmail.com">MLGoldstein28@gmail</a><span className="m-3"></span>
-                <FontAwesomeIcon icon={faFile} className="me-1"/>Resume<span className="m-3"></span>
+                <FontAwesomeIcon icon={faFile} className="me-1"/><a href={resume}>Resume</a><span className="m-3"></span>
                 <a href="tel:2018033947"><FontAwesomeIcon icon={faPhone} className="me-1"/>(201) 803-3947</a></p>     
             </div>
             <form className="w-50 border border-light m-auto">
