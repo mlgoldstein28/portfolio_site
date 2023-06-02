@@ -37,29 +37,9 @@ export default function About() {
                     <button type="submit" className="btn btn-success text-center m-auto">Submit<FontAwesomeIcon icon={faArrowCircleRight} className="ms-3"/></button>
                 </div>
             </form>
-            <footer>
-            </footer>
-            <div className="w-25">
-                <p className="fs-2 text-center m-auto fw-bold">Stack</p>
-                <ul className="list-group">
-                    <li className='list-group-item m-0 text-center'>JavaScript</li>
-                    <li className='list-group-item m-0 text-center'>ReactJS</li>
-                    <li className='list-group-item m-0 text-center'>SQL</li>
-                    <li className='list-group-item m-0 text-center'>HTML</li>
-                    <li className='list-group-item m-0 text-center'>CSS</li>
-                    <li className='list-group-item m-0 text-center'>CSS Precursors</li>
-                    <li className='list-group-item m-0 text-center'>Bootstrap</li>
-                    <li className='list-group-item m-0 text-center'>Knowledge of API's</li>
-                    <li className='list-group-item m-0 text-center'>Knowledge of Git & Github</li>
-                </ul>
                 <div className="text-center">
                     <a href="https://github.com/mlgoldstein28"><img src={gitHubLogo} alt="My-GitHub"  className={styles.gitHub} /></a>    
                 </div>
-            </div>
-            <div className="col-lg-9 col-12 text-center">
-                <button type="button" className="btn btn-outline-success mt-5 me-5 shadow fw-bold"><span className="me-1"><FontAwesomeIcon icon={faEnvelope} /></span>MLGoldstein28@gmail.com</button>
-                <button type="button" className="btn btn-outline-success mt-5 shadow fw-bold"><a href="tel:2018033947"><span className="me-1"><FontAwesomeIcon icon={faPhone} /></span>(201) 803-3947</a></button>
-            </div>
         </div>
     )
 }

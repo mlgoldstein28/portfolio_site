@@ -45,3 +45,22 @@ ul > li {
 .tabs:active {
     background-color: linear-gradient(black, black);
 }
+
+.hiddenDrop {
+    position: relative;
+    display: none;
+    margin-top: 0;
+    margin-right: 0;
+    width: 240px
+}
+
+.stack {
+    width: 240px
+}
+
+.stack:hover {
+    .hiddenDrop {
+        display: block;
+    }
+
+}
