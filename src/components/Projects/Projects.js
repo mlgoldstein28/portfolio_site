@@ -3,6 +3,7 @@ import recipesThumb from '../../media/recipesThumb.png';
 import chipThumb from '../../media/chipThumb.png';
 import styles from './Projects.module.scss';
 import ProjectCards from './ProjectCards';
+import FilterButtons from './FilterButtons';
 
 const Projects = () => {
     let projects =  [
@@ -22,13 +23,9 @@ const Projects = () => {
 
     const [projectDisplay, setProjectDisplay] = useState('All');
 
-    const handleClick = (e) => {
-                setProjectDisplay(e.target.value)
-                console.log(projectDisplay)
-            }
 
     return (
-        <div id="projects" className="">
+        <div id="projects">
             <style jsx>
                 {`
                 .x:checked + label {
@@ -39,30 +36,16 @@ const Projects = () => {
                 `}
             </style>
             <div className={styles.container}>
-                <div className="w-100 text-light p-1">
+                <div className="w-100 text-light pt-1">
                     <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "50px"}}>My Recent Work</h1>
                     <hr className="m-3" style={{width: "340px"}}/>
                     <br/>
                 </div>
-                <div className="d-flex justify-content-center">
-                    <div className="form-check">
-                        <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="ReactJS" id="ReactJS"></input>
-                        <label  className="btn btn-outline-light" for="ReactJS" value="ReactJS">ReactJS</label>
-                    </div>
-                    <div className="form-check">
-                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="API" id="API"></input>
-                        <label  className="btn btn-outline-light" for="API" value="API">API</label>
-                    </div>
-                    <div className="form-check">
-                        <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="Design" id="Design"></input>
-                        <label  className="btn btn-outline-light" for="Design" value="Design">Design</label>
-                    </div>
-                    <div className="form-check">
-                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="All" id="All"></input>
-                        <label  className="btn btn-outline-light" for="All" value="All">All</label>
-                    </div>
+                <div className="m-auto d-flex justify-content-around" style={{width: "40%"}}>
+                    <FilterButtons projectDisplay={projectDisplay}
+                                setProjectDisplay={setProjectDisplay}/>
                 </div>
-                <div className="row m-auto ms-3">
+                <div className="row m-auto">
                     <ProjectCards projects={projects}
                                   setProjectDisplay={setProjectDisplay}
                                   projectDisplay={projectDisplay}/>

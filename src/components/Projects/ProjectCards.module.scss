@@ -1,15 +1,15 @@
 .projectContainer {
     width: 380px;
     height: 340px;
-    border-radius: 8%;
     background-color: rgba(245, 245, 245, 0);
     color: white;
+    text-align: center;
 }
 
 .img {
     width: 360px;
     height: 250px;
-    object-fit: fill;
+    text-align: center;
     border-radius: 2%;
     margin: auto;
     background-color: black;
@@ -34,7 +34,6 @@
     .img {
         scale: 1.05;
         transition-duration: .5s;
-
         opacity: .4
     }
 
@@ -51,7 +50,7 @@
 .summary {
     position: absolute;
     top: 50px;
-    left: 16px;
+    left: 40px;
     width: 300px;
     font-weight: bold;
     text-align: center;

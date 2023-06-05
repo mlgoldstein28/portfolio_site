@@ -14,7 +14,7 @@ export default function App() {
       <div className={styles.myContainer}>
       <Navbar />
         <div className={styles.myTextContainer}>
-          <h1 className="fs-1 fw-bold text-white mb-0">Frontend Developer</h1>
+          <h1 className={styles.myTitle}>Frontend Developer</h1>
           <p className={`${styles.myIntro}`}><span className="text-decoration-underline">ReactJS</span> Specialist <br/> Determined to deliver seamless products</p>
           <a href="#projects"><button className="btn btn-outline-light fs-3 m-3">My Work</button></a>
           <a href="#contact"><button className="btn btn-outline-light fs-3 m-3">My Information</button></a>
