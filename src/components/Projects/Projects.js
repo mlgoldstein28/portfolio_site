@@ -2,7 +2,6 @@ import { useState } from 'react';
 import recipesThumb from '../../media/recipesThumb.png';
 import chipThumb from '../../media/chipThumb.png';
 import styles from './Projects.module.scss';
-import Navbar from '../Navbar/Navbar';
 import ProjectCards from './ProjectCards';
 
 const Projects = () => {

@@ -3,7 +3,7 @@ import styles from './ProjectCards.module.scss';
 const ProjectCards = ({projectDisplay, projects}) => {
 
     let display = projects.map((x) => {
-        let { id, image, title, category, summaryOne, summaryTwo } = x;
+        let { id, image, title, category, summaryOne } = x;
         
     return (
         <div key={id} className={`col-lg-6 col-12 mt-4 m-auto mb-4 ${category.every((cat) => cat !== projectDisplay) ? `d-none` : null}`}>
