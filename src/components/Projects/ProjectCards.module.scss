@@ -12,6 +12,7 @@
     object-fit: fill;
     border-radius: 2%;
     margin: auto;
+    background-color: black;
 }
 
 .description {
@@ -24,14 +25,35 @@
 }
 
 .projectContainer:hover {
-    transition: ease-in-out;
     margin: auto;
+    cursor: pointer;
     .description {
         display: flex;
     }
 
     .img {
-        transform: scale(1.05);
+        scale: 1.05;
+        transition-duration: .5s;
+
+        opacity: .4
     }
 
+    .summary {
+        display: block
+    }
+}
+
+.imgContainer {
+    position: relative;
+
+}
+
+.summary {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
 }
