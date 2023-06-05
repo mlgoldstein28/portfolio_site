@@ -7,12 +7,21 @@ import ProjectCards from './ProjectCards';
 
 const Projects = () => {
     let projects =  [
-        {"id": "1", "title": "Recipes", "image": recipesThumb, "subHead": "ReactJs", "category": ["API", "ReactJS", "JavaScript", "All"]},
-        {"id": "2", "title": "Chipotle Clone","image": chipThumb, "subHead": "ReactJs", "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"]}
+        {"id": "1", 
+        "title": "Recipes", 
+        "image": recipesThumb, 
+        "subHead": "ReactJs", 
+        "category": ["API", "ReactJS", "JavaScript", "All"], 
+        "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site designed to introduce foods from different nationalities."},
+        {"id": "2", 
+        "title": "Chipotle Clone",
+        "image": chipThumb, 
+        "subHead": "ReactJs", 
+        "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
+        "summaryOne": "The purpose of this project was to illustrate my ability to receive a wireframe and deliver a seamless product."}
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
-    const [activeState, setActiveState] = useState('false')
 
     const handleClick = (e) => {
                 setProjectDisplay(e.target.value)
@@ -40,10 +49,6 @@ const Projects = () => {
                     <div className="form-check">
                         <input onClick={handleClick} name="categoryRadio" className="form-check-input x" type="radio" value="ReactJS" id="ReactJS"></input>
                         <label  className="btn btn-outline-light" for="ReactJS" value="ReactJS">ReactJS</label>
-                    </div>
-                    <div className='form-check'>
-                        <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="JavaScript" id="JavaScript"></input>
-                        <label  className="btn btn-outline-light" for="JavaScript" value="JavaScript">JavaScript</label>
                     </div>
                     <div className="form-check">
                         <input onClick={handleClick}  name="categoryRadio" className="form-check-input x" type="radio" value="API" id="API"></input>

@@ -5,7 +5,7 @@ import styles from './App.module.scss';
 import bgImage from './media/IMG_0236.JPG';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
-import About from './components/About/About';
+import About from './components/About/About'; 
 
 
 export default function App() {
