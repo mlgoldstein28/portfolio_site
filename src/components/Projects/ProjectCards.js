@@ -13,7 +13,8 @@ const ProjectCards = ({projectDisplay, projects}) => {
                 <a href={demoLink}><div className={styles.imgContainer}>
                     <img className={`${styles.img} shadow-lg shadow-white`} src={image} alt="Chipotle-Clone" />
                         <div className={styles.summary}>{summaryOne} <br/><br/>
-                            <a href={gitHubLink} className="text-decoration-underline">{gitHubLink}</a>
+                            <a href={demoLink} className="text-decoration-underline m-2">Live Demo Here</a>
+                            <a href={gitHubLink} className="text-decoration-underline m-2">Code Here</a>
                         </div>
                 </div></a>
             </div>

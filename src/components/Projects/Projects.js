@@ -14,15 +14,16 @@ const Projects = () => {
         "image": recipesThumb, 
         "subHead": "ReactJs", 
         "category": ["API", "ReactJS", "JavaScript", "All"], 
-        "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site designed to introduce foods from different nationalities.",
-        "gitHubLink": "github.com/mlgoldstein28/meals "},
+        "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site that lets you search recipes by Nationality, Ingredient, Type or by Search.",
+        "gitHubLink": "https://github.com/mlgoldstein28/recipes-net ",
+        "demoLink": "https://master--melodic-strudel-fce1e4.netlify.app/"},
         {"id": "2", 
         "title": "Chipotle Clone",
         "image": chipThumb, 
         "subHead": "ReactJs", 
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
         "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
-        "gitHubLink": "github.com/mlgoldstein28/chipotle-mock",
+        "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
         "demoLink": "https://master--comforting-zabaione-621a63.netlify.app/",}
     ]
 
