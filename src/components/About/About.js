@@ -27,18 +27,18 @@ export default function About() {
     return (
         <div id="contact" className={`${styles.container}`}>
             <div className="w-100 p-5">
-                <h1 className="text-center" style={{fontSize: "4rem"}}>Contact Me</h1>
+                <h1 className="text-center" style={{fontSize: "3.2rem"}}>Contact Me</h1>
                 <hr className="w-50 m-auto"/>
             </div>
             <div className="text-center fw-bold">
                 <h2 className="mb-3">Michael Goldstein</h2>
-                <div className="fw-bold text-primary">
+                <div className="fw-bold text-primary m-auto text-center">
                     <a className={styles.hideEmail} href="mailto:mlgoldstein28@gmail.com"><FontAwesomeIcon icon={faEnvelope}/>MLGoldstein28@gmail</a><span className="m-3"></span>
                     <a href={resume}><FontAwesomeIcon icon={faFile} className="me-1"/>Resume</a><span className="m-3"></span>
-                    <a href="tel:2018033947"><FontAwesomeIcon icon={faPhone} className="me-1"/>(201) 803-3947</a>
+                    <a href="tel:2018033947" className="me-4"><FontAwesomeIcon icon={faPhone} className="me-1"/>(201) 803-3947</a>
                 </div>     
             </div>
-            <form className="w-50 border border-light m-auto">
+            <form className="w-50 m-auto">
                 <div className="w-50 m-auto mb-3 d-flex flex-row justify-content-center">
                     <div className="d-flex flex-column m-3">
                         <label className="fw-bold">Your Name</label>

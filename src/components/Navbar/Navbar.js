@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <div className="Navbar">
             <nav className="">
-                <div className="d-flex">
+                <div className="d-flex ">
                     <h1 className="m-4 text-white fw-bold">Michael Goldstein</h1>
                     <ul className={`nav navbar-nav mt-4 ms-auto ${styles.stackContainer}`}>
                         <button className={`btn btn-light fs-3 ms-auto ${styles.myStack}`}>My Stack</button>
