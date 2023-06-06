@@ -8,8 +8,8 @@ export default function Navbar() {
             <nav className="">
                 <div className="d-flex">
                     <h1 className="m-4 text-white fw-bold">Michael Goldstein</h1>
-                    <ul className={`nav navbar-nav mt-4 ms-auto ${styles.stack}`}>
-                        <button className={`btn btn-light fs-3 ms-auto ${styles.stack}`}>My Stack</button>
+                    <ul className={`nav navbar-nav mt-4 ms-auto ${styles.stackContainer}`}>
+                        <button className={`btn btn-light fs-3 ms-auto ${styles.myStack}`}>My Stack</button>
                         <ul className={`list-group ${styles.hiddenDrop}`}>
                             <li className='list-group-item m-0 text-center'>JavaScript</li>
                             <li className='list-group-item m-0 text-center'>ReactJS</li>

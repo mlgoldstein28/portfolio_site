@@ -1,13 +1,14 @@
 .imgContainer {
     width: 100%;
     height: 100vh;
-    z-index: 0
+    z-index: 0;
+    overflow: hidden;
 }
 
 .img {
-    object-fit: fill;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .myContainer {
@@ -22,23 +23,18 @@
 .myTextContainer {
     margin: auto;
     margin-top: 140px;
-    text-align: center
-}
-
-.myName {
-    font-size: 60px;
-    color: white
+    text-align: center;
 }
 
 .myTitle {
-    font-size: 40px;
+    font-size: 2.2rem;
     font-weight: bold;
     color: white;
     text-align: center;
     margin-bottom: 0;
 }
 .myIntro {
-    font-size: 32px;
+    font-size: 1.6rem;
     color: whitesmoke;
     line-height: 40px;
     margin-top: 5px;

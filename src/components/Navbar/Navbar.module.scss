@@ -51,26 +51,20 @@ ul > li {
     display: none;
     margin-top: 0;
     margin-right: 0;
-    width: 240px;
+    width: 100%;
+}
+.stackContainer {
+    width: 20%;
 }
 
-.stack {
-    width: 240px;
+.myStack {
+    border: 1px solid white;
+    width: 100%;
 }
 
-.stack:hover {
+.stackContainer:hover {
     .hiddenDrop {
         display: block;
     }
 
-}
-
-@media screen and (max-width: 700px) {
-    .stack {
-        width: 50%
-    }
-
-    .hiddenDrop {
-        width: 50%;
-    }
 }

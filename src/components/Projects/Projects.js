@@ -6,6 +6,8 @@ import ProjectCards from './ProjectCards';
 import FilterButtons from './FilterButtons';
 
 const Projects = () => {
+
+    //Add Projects Here
     let projects =  [
         {"id": "1", 
         "title": "Recipes", 
@@ -37,8 +39,8 @@ const Projects = () => {
             </style>
             <div className={styles.container}>
                 <div className="w-100 text-light pt-1">
-                    <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "50px"}}>My Recent Work</h1>
-                    <hr className="m-3" style={{width: "340px"}}/>
+                    <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "2.3rem"}}>My Recent Work</h1>
+                    <hr className="m-3" style={{width: "160px"}}/>
                     <br/>
                 </div>
                 <div className="m-auto d-flex justify-content-around" style={{width: "40%"}}>
