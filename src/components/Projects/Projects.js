@@ -21,7 +21,7 @@ const Projects = () => {
         "image": chipThumb, 
         "subHead": "ReactJs", 
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
-        "summaryOne": "The purpose of this project was to illustrate my ability to receive a wireframe and deliver a seamless product.",
+        "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
         "gitHubLink": "github.com/mlgoldstein28/chipotle-mock",
         "demoLink": "https://master--comforting-zabaione-621a63.netlify.app/",}
     ]
