@@ -22,7 +22,8 @@ const Projects = () => {
         "subHead": "ReactJs", 
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
         "summaryOne": "The purpose of this project was to illustrate my ability to receive a wireframe and deliver a seamless product.",
-        "gitHubLink": "github.com/mlgoldstein28/chipotle-mock"},
+        "gitHubLink": "github.com/mlgoldstein28/chipotle-mock",
+        "demoLink": "https://master--comforting-zabaione-621a63.netlify.app/",}
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
