@@ -14,13 +14,15 @@ const Projects = () => {
         "image": recipesThumb, 
         "subHead": "ReactJs", 
         "category": ["API", "ReactJS", "JavaScript", "All"], 
-        "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site designed to introduce foods from different nationalities."},
+        "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site designed to introduce foods from different nationalities.",
+        "gitHubLink": "github.com/mlgoldstein28/meals "},
         {"id": "2", 
         "title": "Chipotle Clone",
         "image": chipThumb, 
         "subHead": "ReactJs", 
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
-        "summaryOne": "The purpose of this project was to illustrate my ability to receive a wireframe and deliver a seamless product."}
+        "summaryOne": "The purpose of this project was to illustrate my ability to receive a wireframe and deliver a seamless product.",
+        "gitHubLink": "github.com/mlgoldstein28/chipotle-mock"},
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
