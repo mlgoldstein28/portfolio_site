@@ -24,7 +24,7 @@ const Projects = () => {
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
         "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
         "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
-        "demoLink": "https://master--comforting-zabaione-621a63.netlify.app/",}
+        "demoLink": "https://chipotle-clone.netlify.app/",}
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
