@@ -21,7 +21,7 @@ export default function App() {
         </div> 
       </div>
       <div className={styles.imgContainer}>
-          <img src={bgImage} className={styles.img} alt="backgroundImage" />
+          <img src={bgImage} className={styles.img} alt="" />
       </div>
       <Projects />
       <About />
