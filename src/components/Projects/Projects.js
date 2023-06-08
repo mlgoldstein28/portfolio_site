@@ -16,7 +16,7 @@ const Projects = () => {
         "category": ["API", "ReactJS", "JavaScript", "All"], 
         "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site that lets you search recipes by Nationality, Ingredient, Type or by Search.",
         "gitHubLink": "https://github.com/mlgoldstein28/recipes-net ",
-        "demoLink": "https://master--melodic-strudel-fce1e4.netlify.app/"},
+        "demoLink": "https://internationalrecipes.netlify.app/"},
         {"id": "2", 
         "title": "Chipotle Clone",
         "image": chipThumb, 
