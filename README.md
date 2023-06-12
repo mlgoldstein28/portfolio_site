@@ -1,7 +1,7 @@
 # Portfolio
 
 Hosted by **Github Pages**, my portfolio site was created with **React**, generated from *create-react-app*. 
-**Bootstrap and SASS** aided in the completion of my desired design.
+**Bootstrap and SCSS** aided in the completion of my desired design.
 
 My Recent Work displays my projects. 
 Hovering over my projects will display a short description and links to both code on GitHub and a Live Demo (hosted on Netlify). 
