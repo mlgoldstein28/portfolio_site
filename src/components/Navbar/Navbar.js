@@ -16,7 +16,7 @@ export default function Navbar() {
                             <li className='list-group-item m-0 text-center'>Boostrap</li>
                             <li className='list-group-item m-0 text-center'>HTML</li>
                             <li className='list-group-item m-0 text-center'>CSS</li>
-                            <li className='list-group-item m-0 text-center'>SASS</li>
+                            <li className='list-group-item m-0 text-center'>SCSS</li>
                             <li className='list-group-item m-0 text-center'>SQL</li>
                             <li className='list-group-item m-0 text-center'>Knowledge of REST API's</li>
                             <li className='list-group-item m-0 text-center'>Knowledge of Git & Github</li>

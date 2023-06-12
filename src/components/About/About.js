@@ -52,7 +52,7 @@ export default function About() {
                 <div className="vh-25 d-flex flex-column justify-content-center m-auto" style={{width: "460px"}}>
                     <label className="fw-bold">Your Message</label>
                     <textarea onChange={handleBody} className={styles.input} style={{height: "120px", marginTop: "15px"}}></textarea>
-                    </div>
+                </div>
                 <div className="text-center mt-3 mb-3">
                     <a href={`mailto:mlgoldstein28@gmail.com?subject='From: ${ name}-${email}'&body=${body}`}><button type="button" className="btn btn-success text-center m-auto">Submit<FontAwesomeIcon icon={faArrowCircleRight} className="ms-3"/></button></a>
                 </div>
