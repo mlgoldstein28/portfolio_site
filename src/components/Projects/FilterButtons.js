@@ -2,7 +2,7 @@
 
 export default function FilterButtons({projectDisplay, setProjectDisplay}){
 
-    let filterButtons = ["ReactJS", "API", "Design", "All"];
+    let filterButtons = ["ReactJS", "REST API", "Design", "All"];
 
     const handleClick = (e) => {
         setProjectDisplay(e.target.value)

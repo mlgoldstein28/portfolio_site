@@ -13,7 +13,7 @@ const Projects = () => {
         "title": "Recipes", 
         "image": recipesThumb, 
         "subHead": "ReactJs", 
-        "category": ["API", "ReactJS", "JavaScript", "All"], 
+        "category": ["REST API", "ReactJS", "JavaScript", "All"], 
         "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site that lets you search recipes by Nationality, Ingredient, Type or by Search.",
         "gitHubLink": "https://github.com/mlgoldstein28/recipes-net ",
         "demoLink": "https://internationalrecipes.netlify.app/"},
