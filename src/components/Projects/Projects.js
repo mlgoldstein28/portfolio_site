@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import recipesThumb from '../../media/recipesThumb.png';
 import chipThumb from '../../media/chipThumb.png';
+import threadsThumb from '../../media/threadsThumb.png';
 import styles from './Projects.module.scss';
 import ProjectCards from './ProjectCards';
 import FilterButtons from './FilterButtons';
@@ -9,7 +10,8 @@ const Projects = () => {
 
     //Add Projects Here
     let projects =  [
-        {"id": "1", 
+        {
+        "id": "1", 
         "title": "Recipes", 
         "image": recipesThumb, 
         "subHead": "ReactJs", 
@@ -24,7 +26,17 @@ const Projects = () => {
         "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
         "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
         "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
-        "demoLink": "https://chipotle-clone.netlify.app/",}
+        "demoLink": "https://chipotle-clone.netlify.app/",},
+        {
+        "id": "3",
+        "title": "ThreadsDB",
+        "image": threadsThumb,
+        "subHead": "",
+        "category": ["ReactJS", "MERN", "REST API", "All"],
+        "summaryOne": "This order database application is used to create new orders, see current ones, as well as update and delete old orders.",
+        "gitHubLink": "https://github.com/mlgoldstein28/threads-college",
+        "demoLink": ""
+        }
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');

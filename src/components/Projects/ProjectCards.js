@@ -14,7 +14,15 @@ const ProjectCards = ({projectDisplay, projects}) => {
                   <div className={styles.imgContainer}>
                         <img className={`${styles.img} shadow-lg shadow-white`} src={image} alt={title} />
                         <div className={styles.summary}>{summaryOne} <br/><br/>
-                            <a href={demoLink} className="btn btn-outline-light m-2">Live Demo Here</a>
+                        {
+                           (() => {
+                                if (demoLink) {
+                                    return (
+                                        <a href={demoLink} className="btn btn-outline-light m-2">Live Demo Here</a>
+                                    )
+                                }
+                           })()
+                        }
                             <a href={gitHubLink} className="btn btn-outline-light m-2">Code Here</a>
                         </div>
                   </div>
