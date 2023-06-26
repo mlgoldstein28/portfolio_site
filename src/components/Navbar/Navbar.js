@@ -13,11 +13,10 @@ export default function Navbar() {
                         <ul className={`list-group ${styles.hiddenDrop}`}>
                             <li className='list-group-item m-0 text-center'>JavaScript</li>
                             <li className='list-group-item m-0 text-center'>ReactJS</li>
+                            <li className='list-group-item m-0 text-center'>MERN</li>
                             <li className='list-group-item m-0 text-center'>Boostrap</li>
-                            <li className='list-group-item m-0 text-center'>HTML</li>
-                            <li className='list-group-item m-0 text-center'>CSS</li>
+                            <li className='list-group-item m-0 text-center'>HTML/CSS</li>
                             <li className='list-group-item m-0 text-center'>SCSS</li>
-                            <li className='list-group-item m-0 text-center'>SQL</li>
                             <li className='list-group-item m-0 text-center'>Knowledge of REST API's</li>
                             <li className='list-group-item m-0 text-center'>Knowledge of Git & Github</li>
                         </ul>
