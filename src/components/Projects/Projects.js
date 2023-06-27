@@ -33,7 +33,7 @@ const Projects = () => {
         "image": threadsThumb,
         "subHead": "",
         "category": ["ReactJS", "MERN", "REST API", "All"],
-        "summaryOne": "This order database application is used to create new orders, see current ones, as well as update and delete old orders.",
+        "summaryOne": "This CRUD application was created for a boutique clothing store in order to organize their college orders.",
         "gitHubLink": "https://github.com/mlgoldstein28/threads-college",
         "demoLink": ""
         }
