@@ -59,7 +59,7 @@ const Projects = () => {
                     <hr className="m-3" style={{width: "160px"}}/>
                     <br/>
                 </div>
-                <div className="m-auto d-flex justify-content-around" style={{width: "40%"}}>
+                <div className={styles.filterButtonContainer} style={{width: "40%"}}>
                     <FilterButtons projectDisplay={projectDisplay}
                                 setProjectDisplay={setProjectDisplay}/>
                 </div>
