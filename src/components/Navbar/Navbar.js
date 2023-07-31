@@ -14,11 +14,12 @@ export default function Navbar() {
                             <li className='list-group-item m-0 text-center'>JavaScript</li>
                             <li className='list-group-item m-0 text-center'>ReactJS</li>
                             <li className='list-group-item m-0 text-center'>MERN</li>
+                            <li className='list-group-item m-0 text-center'>MySQL</li>
                             <li className='list-group-item m-0 text-center'>Boostrap</li>
-                            <li className='list-group-item m-0 text-center'>HTML/CSS</li>
-                            <li className='list-group-item m-0 text-center'>SCSS</li>
-                            <li className='list-group-item m-0 text-center'>Knowledge of REST API's</li>
-                            <li className='list-group-item m-0 text-center'>Knowledge of Git & Github</li>
+                            <li className='list-group-item m-0 text-center'>CSS/SCSS</li>
+                            <li className='list-group-item m-0 text-center'>HTML</li>
+                            <li className='list-group-item m-0 text-center'>Experience with REST API's</li>
+                            <li className='list-group-item m-0 text-center'>Experience with Git & Github</li>
                         </ul>
                     </ul>
                 </div>
