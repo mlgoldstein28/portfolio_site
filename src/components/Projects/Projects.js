@@ -18,17 +18,10 @@ const Projects = () => {
         "category": ["REST API", "ReactJS", "JavaScript", "All"], 
         "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site that lets you search recipes by Nationality, Ingredient, Type or by Search.",
         "gitHubLink": "https://github.com/mlgoldstein28/recipes-net ",
-        "demoLink": "https://internationalrecipes.netlify.app/"},
-        {"id": "2", 
-        "title": "Chipotle Clone",
-        "image": chipThumb, 
-        "subHead": "ReactJs", 
-        "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
-        "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
-        "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
-        "demoLink": "https://chipotle-clone.netlify.app/",},
+        "demoLink": "https://internationalrecipes.netlify.app/"
+        },
         {
-        "id": "3",
+            "id": "3",
         "title": "ThreadsDB",
         "image": threadsThumb,
         "subHead": "",
@@ -36,7 +29,17 @@ const Projects = () => {
         "summaryOne": "This CRUD application was created for a boutique clothing store in order to organize their college orders.",
         "gitHubLink": "https://github.com/mlgoldstein28/threads-college",
         "demoLink": ""
-        }
+        },
+        {
+        "id": "2", 
+        "title": "Chipotle Clone",
+        "image": chipThumb, 
+        "subHead": "ReactJs", 
+        "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
+        "summaryOne": "This clone project illustrates my ability to deliver a product from a wireframe.",
+        "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
+        "demoLink": "https://chipotle-clone.netlify.app/",
+        },
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');
@@ -59,11 +62,11 @@ const Projects = () => {
                     <hr className="m-3" style={{width: "160px"}}/>
                     <br/>
                 </div>
-                <div className={styles.filterButtonContainer} style={{width: "40%"}}>
+                <div className={styles.filterButtonContainer} style={{width: "40%", display: 'none'}}>
                     <FilterButtons projectDisplay={projectDisplay}
                                 setProjectDisplay={setProjectDisplay}/>
                 </div>
-                <div className="row m-auto">
+                <div className="m-auto">
                     <ProjectCards projects={projects}
                                   setProjectDisplay={setProjectDisplay}
                                   projectDisplay={projectDisplay}/>
