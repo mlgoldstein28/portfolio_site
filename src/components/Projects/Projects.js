@@ -17,7 +17,7 @@ const Projects = () => {
         "subHead": "ReactJs", 
         "category": ["REST API", "ReactJS", "JavaScript", "All"], 
         "summaryOne": "Built with MealDB's API, 'Recipes' is a culinary site that lets you search recipes by Nationality, Ingredient, Type or by Search.",
-        "gitHubLink": "https://github.com/mlgoldstein28/recipes-net ",
+        "gitHubLink": "https://github.com/mlgoldstein28/recipes-net",
         "demoLink": "https://internationalrecipes.netlify.app/"
         },
         {
@@ -56,7 +56,7 @@ const Projects = () => {
                 input[type="radio"] { display: none; }
                 `}
             </style>
-            <div className={styles.container}>
+            <div className={`bg-dark bg-gradient ${styles.container}`}>
                 <div className="w-100 text-light pt-1">
                     <h1 className="m-3 mb-0 text-left fw-bold" style={{fontSize: "2.3rem"}}>My Recent Work</h1>
                     <hr className="m-3" style={{width: "160px"}}/>

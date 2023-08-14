@@ -1,6 +1,7 @@
 .projectContainer {
     width: 380px;
     height: 340px;
+    border: 2px solid white;
     background-color: rgba(245, 245, 245, 0);
     color: white;
     text-align: center;
@@ -44,7 +45,6 @@
 
 .imgContainer {
     position: relative;
-
 }
 
 .summary {
@@ -55,4 +55,29 @@
     font-weight: bold;
     text-align: center;
     display: none;
+}
+
+//NewDesign
+
+img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+img:hover {
+    scale: 1.04;
+}
+
+.imageAndTextContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white
+}
+
+.textContainer {
+    width: 330px;
+    margin-top: 80px;
+    margin-right: 60px
 }

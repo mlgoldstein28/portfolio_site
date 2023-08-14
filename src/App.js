@@ -23,15 +23,14 @@ export default function App() {
           <p className={`${styles.myIntro}`}><span className="text-decoration-underline">ReactJS</span> Specialist <br/> Determined to deliver seamless products</p>
           <a href="#projects"><button className="btn btn-outline-light fs-3 m-3">My Work</button></a>
           <a href="#contact"><button className="btn btn-outline-light fs-3 m-3">My Information</button></a>
-          
             <p className={styles.myStack}>
                 <span><img src={jsIcon} alt="JS" className={styles.stackLogo}/></span>
                 <span><img src={reactIcon} alt="" className={styles.stackLogo}/></span>
                 <span><img src={nodeJSIcon} alt="" className={styles.stackLogo}/></span>
                 <span><img src={htmlIcon} alt="" className={styles.stackLogo}/></span>
                 <span><img src={cssIcon} alt="" className={styles.stackLogo} style={{width: '30px', height: '30px', margin: '15px'}} /></span>
-                <span><img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" className={styles.stackLogo} /></span></p>
-          
+                <span><img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" className={styles.stackLogo} /></span>
+            </p>
         </div> 
       </div>
       <div className={styles.imgContainer}>

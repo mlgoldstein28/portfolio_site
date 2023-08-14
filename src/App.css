@@ -5,4 +5,22 @@
   max-width: 100%;
 }
 
+.myStack {
+  width: 520px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.839);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.stackLogo {
+    width: 40px;
+    height: 40px;
+    margin: 15px
+  }
+  
+  .stackLogo:hover {
+    scale: 1.1;
+  }
 
