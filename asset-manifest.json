@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_site/static/css/main.3767bc9e.css",
-    "main.js": "/portfolio_site/static/js/main.de7beda8.js",
+    "main.css": "/portfolio_site/static/css/main.14268af8.css",
+    "main.js": "/portfolio_site/static/js/main.4c9b0cb2.js",
     "static/js/787.37faa4c4.chunk.js": "/portfolio_site/static/js/787.37faa4c4.chunk.js",
     "static/media/chipThumb.png": "/portfolio_site/static/media/chipThumb.bd1c0fb9badee8db2e19.png",
     "static/media/IMG_0236.JPG": "/portfolio_site/static/media/IMG_0236.a31e747aa2113b55c80d.JPG",
@@ -13,12 +13,12 @@
     "static/media/nodejs-seeklogo.com.svg": "/portfolio_site/static/media/nodejs-seeklogo.com.3dc364b8e9beb3561620274aea4f0844.svg",
     "static/media/react-2.svg": "/portfolio_site/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
     "index.html": "/portfolio_site/index.html",
-    "main.3767bc9e.css.map": "/portfolio_site/static/css/main.3767bc9e.css.map",
-    "main.de7beda8.js.map": "/portfolio_site/static/js/main.de7beda8.js.map",
+    "main.14268af8.css.map": "/portfolio_site/static/css/main.14268af8.css.map",
+    "main.4c9b0cb2.js.map": "/portfolio_site/static/js/main.4c9b0cb2.js.map",
     "787.37faa4c4.chunk.js.map": "/portfolio_site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3767bc9e.css",
-    "static/js/main.de7beda8.js"
+    "static/css/main.14268af8.css",
+    "static/js/main.4c9b0cb2.js"
   ]
 }
