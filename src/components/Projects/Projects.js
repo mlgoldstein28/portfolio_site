@@ -2,6 +2,7 @@ import { useState } from 'react';
 import recipesThumb from '../../media/recipesThumb.png';
 import chipThumb from '../../media/chipThumb.png';
 import threadsThumb from '../../media/threadsThumb.png';
+import capricorpThumb from '../../media/capricorpThumb.png';
 import styles from './Projects.module.scss';
 import ProjectCards from './ProjectCards';
 import FilterButtons from './FilterButtons';
@@ -40,6 +41,15 @@ const Projects = () => {
         "gitHubLink": "https://github.com/mlgoldstein28/chipotle-mock",
         "demoLink": "https://chipotle-clone.netlify.app/",
         },
+        {"id": "4", 
+        "title": "Capricorp Tracker",
+        "image": capricorpThumb, 
+        "subHead": "", 
+        "category": ["ReactJS", "JavaScript", "Design", "Animation", "All"], 
+        "summaryOne": "This is an  internal program used to improve organization and communication regarding past, current, and upcoming projects .",
+        "gitHubLink": "https://github.com/mlgoldstein28/capricorp-net",
+        "demoLink": "",
+        }
     ]
 
     const [projectDisplay, setProjectDisplay] = useState('All');

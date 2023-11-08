@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './About.module.scss';
 import gitHubLogo from '../../media/github-mark.png';
 import linkedInLogo from '../../media/LI-logo.png';
-import resume from  '../../media/Resume_FD.pdf';
+import resume from  '../../media/MichaelGoldstein_Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
